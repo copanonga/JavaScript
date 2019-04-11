@@ -1,5 +1,5 @@
 
-# JavaScript
+# Snippets para JavaScript
 
 ## Índice de contenidos
 
