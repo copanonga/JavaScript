@@ -5,6 +5,7 @@
 
 - [forEach](#forEach)
 - [sort](#sort)
+- [Obtener valor y selección de inputs](#Obtener valor y selección de inputs)
 
 ## forEach
 
@@ -24,4 +25,15 @@ datosAOrdenar.sort(function(a, b) {
   var dateA = new Date(a.fecha), dateB = new Date(b.fecha);
   return dateA - dateB;
 });
+```
+
+##Obtener valor y selección de inputs
+
+```var chk_arr =  document.getElementsByName("nameInput[]");
+var chklength = chk_arr.length;             
+
+for( i = 0 ; i < chklength ; i++ )
+{
+    console.log(chk_arr[i].value + " - " +chk_arr[i].checked);
+}
 ```
