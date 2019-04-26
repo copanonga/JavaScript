@@ -27,7 +27,7 @@ datosAOrdenar.sort(function(a, b) {
 });
 ```
 
-##Obtener valor y selección de inputs
+## Obtener valor y selección de inputs
 
 ```var chk_arr =  document.getElementsByName("nameInput[]");
 var chklength = chk_arr.length;             
