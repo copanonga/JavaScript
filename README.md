@@ -5,7 +5,7 @@
 
 - [forEach](#forEach)
 - [sort](#sort)
-- [Obtener valor y selección de inputs](#Obtener valor y selección de inputs)
+- [Obtener valor y selección de inputs](#obtener-valor-y-selección-de-inputs)
 
 ## forEach
 
