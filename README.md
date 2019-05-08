@@ -20,7 +20,8 @@ array.forEach((item, index) => {
 
 ## sort
 
-```var datosAOrdenar = data['datos'];
+```
+var datosAOrdenar = data['datos'];
                     
 datosAOrdenar.sort(function(a, b) {
   var dateA = new Date(a.fecha), dateB = new Date(b.fecha);
@@ -30,7 +31,8 @@ datosAOrdenar.sort(function(a, b) {
 
 ## Obtener valor y selección de inputs
 
-```var chk_arr =  document.getElementsByName("nameInput[]");
+```
+var chk_arr =  document.getElementsByName("nameInput[]");
 var chklength = chk_arr.length;             
 
 for( i = 0 ; i < chklength ; i++ )
@@ -40,7 +42,8 @@ for( i = 0 ; i < chklength ; i++ )
 ```
 ## Fecha
 
-```var dt = new Date('2019-5-8');
+```
+var dt = new Date('2019-5-8');
 var date = dt.getDate();
 var month = dt.getMonth() + 1;
 var year = dt.getFullYear();
