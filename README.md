@@ -72,3 +72,16 @@ if (date.toString().length == 1) {
 
 var result = year.toString() + "-" + month.toString() + "-" + date.toString();
 ```
+
+## Set data
+
+```
+<button id="item" type="button" data-book="2">Book</button> 
+
+var item = document.getElementById('item');
+var data = item.getAttribute("data-book");
+console.log("Book: " + data);
+item.dataset.book = "Julio Verne";
+data = item.getAttribute("data-book");
+console.log("Book: " + data);
+```
