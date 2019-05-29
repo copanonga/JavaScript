@@ -8,6 +8,7 @@
 - [Obtener valor y selección de inputs](#obtener-valor-y-selección-de-inputs)
 - [Obtener valor y selección de select](#obtener-valor-y-selección-de-select)
 - [Fecha](#fecha)
+- [Set data](#set-data)
 
 ## forEach
 
