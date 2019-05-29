@@ -45,9 +45,15 @@ for( i = 0 ; i < chklength ; i++ )
 ## Obtener valor y selección de select
 
 ```
-
+var itemsSeleccionados = '';
+    for ( var i = 0 ; i < items.options.length ; i++) {
+       if ( items.options[i].selected ) {
+           if (items.options[i].value != 0) {
+               itemsSeleccionados += items.options[i].value + "|";
+           }
+       }
+    }
 ```
-
 
 ## Fecha
 
