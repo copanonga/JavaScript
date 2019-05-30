@@ -73,6 +73,18 @@ if (date.toString().length == 1) {
 var result = year.toString() + "-" + month.toString() + "-" + date.toString();
 ```
 
+```
+<input list="fechas" type="date" name="fecha" id="fecha">
+    <datalist id="fechas">
+      <option value="2019-01-01">
+      <option value="2019-02-02">
+      <option value="2019-03-03">
+      <option value="2019-04-04">
+      <option value="2019-05-05">
+      <option value="2019-06-06">
+    </datalist>
+```
+
 ## Set data
 
 ```
