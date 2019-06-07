@@ -9,6 +9,7 @@
 - [Obtener valor y selección de select](#obtener-valor-y-selección-de-select)
 - [Fecha](#fecha)
 - [Set data](#set-data)
+- [Select2](#select2)
 
 ## forEach
 
@@ -96,4 +97,18 @@ console.log("Book: " + data);
 item.dataset.book = "Julio Verne";
 data = item.getAttribute("data-book");
 console.log("Book: " + data);
+```
+
+## Select2
+
+```
+<select class="js-select2">
+  <option value="1">Valor</option>
+    ...
+  <option value="20">Valor</option>
+</select>
+
+$(document).ready(function() {
+    $('.js-select2').select2();
+});
 ```
