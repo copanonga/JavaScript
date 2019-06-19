@@ -12,13 +12,6 @@
 - [Select2](#select2)
 - [Buscar texto](#buscar-texto)
 
-## Buscar texto
-
-```
-var str = "Buscar texto";
-var n = str.includes("texto");
-```
-
 ## forEach
 
 ```javascript
@@ -119,4 +112,11 @@ console.log("Book: " + data);
 $(document).ready(function() {
     $('.js-select2').select2();
 });
+```
+
+## Buscar texto
+
+```
+var str = "Buscar texto";
+var n = str.includes("texto");
 ```
