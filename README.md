@@ -10,6 +10,14 @@
 - [Fecha](#fecha)
 - [Set data](#set-data)
 - [Select2](#select2)
+- [Buscar texto](#buscar-texto)
+
+## Buscar texto
+
+```
+var str = "Buscar texto";
+var n = str.includes("texto");
+```
 
 ## forEach
 
