@@ -12,6 +12,7 @@
 - [Select2](#select2)
 - [Buscar texto](#buscar-texto)
 - [Split](#split)
+- [Replace](#replace)
 
 ## forEach
 
@@ -127,4 +128,11 @@ var n = str.includes("texto");
 ```
 var str = "El veloz murciélago hindú";
 var res = str.split(" ");
+```
+
+## Replace
+
+```
+var str = "El veloz murciélago hindú"
+var res = str.replace("hindú", "");
 ```
