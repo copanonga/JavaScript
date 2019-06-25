@@ -13,6 +13,7 @@
 - [Buscar texto](#buscar-texto)
 - [Split](#split)
 - [Replace](#replace)
+- [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 
 ## forEach
 
@@ -135,4 +136,11 @@ var res = str.split(" ");
 ```
 var str = "El veloz murciélago hindú"
 var res = str.replace("hindú", "");
+```
+
+## Eliminar etiquetas HTML de un string
+
+```
+var contenido = "<p>Hello, <b>World</b>";
+var texto = $(contenido).text();
 ```
