@@ -12,7 +12,7 @@
 - [Select2](#select2)
 - [Buscar texto](#buscar-texto)
 - [Split](#split)
-- [Eliminar último caracter](#eliminar-ultimo-caracter)
+- [Eliminar último caracter](#eliminar-último-caracter)
 - [Replace](#replace)
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 - [Descargar fichero creado](#descargar-fichero-creado)
