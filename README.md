@@ -16,6 +16,7 @@
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 - [Descargar fichero creado](#descargar-fichero-creado)
 - [Leer fichero](#leer-fichero)
+- [Crear objeto y cargarlo en array](#crear-objeto-y-cargarlo-en-array)
 
 ## forEach
 
@@ -197,4 +198,21 @@ function leer() {
 }
 
 </script>
+```
+
+## Crear objeto y cargarlo en array
+
+```
+var cursos = [];
+var curso = {
+  'name': 'Nombre del curso 001',
+  'owner': 'Propietario 001',
+}
+cursos.push(curso);
+
+var curso = {
+  'name': 'Nombre del curso 002',
+  'owner': 'Propietario 002',
+}
+cursos.push(curso);
 ```
