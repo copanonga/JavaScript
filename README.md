@@ -14,6 +14,7 @@
 - [Split](#split)
 - [Replace](#replace)
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
+- [Descargar fichero creado](#descargar-fichero-creado)
 
 ## forEach
 
@@ -143,4 +144,22 @@ var res = str.replace("hindú", "");
 ```
 var contenido = "<p>Hello, <b>World</b>";
 var texto = $(contenido).text();
+```
+
+## Descargar fichero creado
+
+```
+<script>
+    
+function download(text, name, type) {
+  var a = document.getElementById("a");
+  var file = new Blob([text], {type: type});
+  a.href = URL.createObjectURL(file);
+  a.download = name;
+}
+
+</script>
+
+<a href="" id="a">click here to download your file</a>
+<button onclick="download('file text', 'myfilename.txt', 'text/plain')">Create file</button>
 ```
