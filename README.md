@@ -170,7 +170,7 @@ function download(text, name, type) {
 ```
 <input type="file" id="myFile">
 <hr>
-<textarea style="width:500px;height: 400px" id="output"></textarea>
+<textarea style="width:100%;height: 400px" id="output"></textarea>
 
 <script>
 
