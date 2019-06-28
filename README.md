@@ -17,6 +17,7 @@
 - [Descargar fichero creado](#descargar-fichero-creado)
 - [Leer fichero](#leer-fichero)
 - [Crear objeto y cargarlo en array](#crear-objeto-y-cargarlo-en-array)
+- [Retardo](#retardo)
 
 ## forEach
 
@@ -215,4 +216,10 @@ var curso = {
   'owner': 'Propietario 002',
 }
 cursos.push(curso);
+```
+
+## Retardo
+
+```
+setTimeout ("console.log('Retardo');", 5000);
 ```
