@@ -12,6 +12,7 @@
 - [Select2](#select2)
 - [Buscar texto](#buscar-texto)
 - [Split](#split)
+- [Eliminar último caracter](#eliminar-ultimo-caracter)
 - [Replace](#replace)
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 - [Descargar fichero creado](#descargar-fichero-creado)
@@ -133,6 +134,12 @@ var n = str.includes("texto");
 ```
 var str = "El veloz murciélago hindú";
 var res = str.split(" ");
+```
+
+## Eliminar último caracter
+
+```
+var line = lines.slice(1, -1); 
 ```
 
 ## Replace
