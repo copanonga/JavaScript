@@ -15,6 +15,7 @@
 - [Replace](#replace)
 - [Eliminar etiquetas HTML de un string](#eliminar-etiquetas-html-de-un-string)
 - [Descargar fichero creado](#descargar-fichero-creado)
+- [Leer fichero](#leer-fichero)
 
 ## forEach
 
@@ -162,4 +163,38 @@ function download(text, name, type) {
 
 <a href="" id="a">click here to download your file</a>
 <button onclick="download('file text', 'myfilename.txt', 'text/plain')">Create file</button>
+```
+
+## Leer fichero
+
+```
+<input type="file" id="myFile">
+<hr>
+<textarea style="width:500px;height: 400px" id="output"></textarea>
+
+<script>
+
+document.getElementById("myFile").addEventListener("change", leer);
+
+function leer() {
+    
+    if (this.files && this.files[0]) {
+        
+        var output = document.getElementById("output");
+        var myFile = this.files[0];
+        var reader = new FileReader();
+
+        reader.addEventListener('load', function (e) {
+        
+          output.textContent = e.target.result;
+          
+        });
+
+        reader.readAsBinaryString(myFile);
+        
+    } 
+    
+}
+
+</script>
 ```
