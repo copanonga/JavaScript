@@ -18,7 +18,7 @@
 - [Descargar fichero creado](#descargar-fichero-creado)
 - [Leer fichero](#leer-fichero)
 - [Crear objeto y cargarlo en array](#crear-objeto-y-cargarlo-en-array)
-- [Retardo](#retardo)
+- [Temporizador](#temporizador)
 
 ## forEach
 
@@ -225,8 +225,19 @@ var curso = {
 cursos.push(curso);
 ```
 
-## Retardo
+## Temporizador
 
 ```
-setTimeout ("console.log('Retardo');", 5000);
+for(let i = 0; i < lines.length; i++) {
+
+    let id = lines[i];
+
+    setTimeout(function(){
+
+        console.log("ID: " + id);
+        execute(id);
+
+    }, 6000 * (i+1));
+       
+}
 ```
