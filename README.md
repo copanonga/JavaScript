@@ -19,6 +19,7 @@
 - [Leer fichero](#leer-fichero)
 - [Crear objeto y cargarlo en array](#crear-objeto-y-cargarlo-en-array)
 - [Temporizador](#temporizador)
+- [Crear objeto](#crear-objeto)
 
 ## forEach
 
@@ -240,4 +241,12 @@ for(let i = 0; i < lines.length; i++) {
     }, 6000 * (i+1));
        
 }
+```
+
+## Crear objeto
+
+```
+var datos = new Object();
+datos.id = id;
+datos.valor = value;
 ```
