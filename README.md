@@ -20,6 +20,7 @@
 - [Crear objeto y cargarlo en array](#crear-objeto-y-cargarlo-en-array)
 - [Temporizador](#temporizador)
 - [Crear objeto](#crear-objeto)
+- [JSON.stringify()](#JSON.stringify())
 
 ## forEach
 
@@ -249,4 +250,10 @@ for(let i = 0; i < lines.length; i++) {
 var datos = new Object();
 datos.id = id;
 datos.valor = value;
+```
+
+## JSON.stringify()
+
+```
+console.log(JSON.stringify(objeto));
 ```
