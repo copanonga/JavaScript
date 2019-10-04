@@ -20,7 +20,7 @@
 - [Crear objeto y cargarlo en array](#crear-objeto-y-cargarlo-en-array)
 - [Temporizador](#temporizador)
 - [Crear objeto](#crear-objeto)
-- [JSON.stringify()](#JSONstringify())
+- [JSON stringify](#JSON-stringify)
 
 ## forEach
 
@@ -252,7 +252,7 @@ datos.id = id;
 datos.valor = value;
 ```
 
-## JSON.stringify()
+## JSON stringify
 
 ```
 console.log(JSON.stringify(objeto));
