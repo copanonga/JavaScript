@@ -20,7 +20,7 @@
 - [Crear objeto y cargarlo en array](#crear-objeto-y-cargarlo-en-array)
 - [Temporizador](#temporizador)
 - [Crear objeto](#crear-objeto)
-- [JSON.stringify()](#JSON.stringify())
+- [JSON.stringify()](#JSONstringify())
 
 ## forEach
 
