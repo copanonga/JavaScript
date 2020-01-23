@@ -30,6 +30,11 @@ const array = ['this', 'is', 'a', 'test'];
 array.forEach((item, index) => {
 
 });
+  
+data['lineas'].forEach((lineaObtenida, index) => {
+    console.log('Linea:  ' + lineaObtenida['linea'] + " Index: " + index);
+});
+            
 ```
 
 ## sort
