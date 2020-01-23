@@ -34,6 +34,10 @@ array.forEach((item, index) => {
 data['lineas'].forEach((lineaObtenida, index) => {
     console.log('Linea:  ' + lineaObtenida['linea'] + " Index: " + index);
 });
+
+data['lineas'].forEach(function (lineaObtenida, index) {
+    console.log('Linea:  ' + lineaObtenida['linea'] + " Index: " + index);
+});
             
 ```
 
