@@ -21,6 +21,7 @@
 - [Temporizador](#temporizador)
 - [Crear objeto](#crear-objeto)
 - [JSON stringify](#JSON-stringify)
+- [Comprobar variable](#comprobar-variable)
 
 ## forEach
 
@@ -265,4 +266,12 @@ datos.valor = value;
 
 ```
 console.log(JSON.stringify(objeto));
+```
+
+## Comprobar variable
+
+Comprobar si la variable es emtpy, null o undefined
+
+```
+if (!str || 0 === str.length) {...}
 ```
