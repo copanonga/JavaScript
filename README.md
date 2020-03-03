@@ -22,6 +22,7 @@
 - [Crear objeto](#crear-objeto)
 - [JSON stringify](#JSON-stringify)
 - [Comprobar variable](#comprobar-variable)
+- [Mostrar pophover](#mostrar-popover)
 
 ## forEach
 
@@ -274,4 +275,21 @@ Comprobar si la variable es emtpy, null o undefined
 
 ```
 if (!str || 0 === str.length) {...}
+```
+
+## Mostrar pophover
+
+```
+<label id="miElemento"        
+       data-toggle="popover"
+       data-trigger="hover"
+       title="Título del elemento" 
+       data-original-title="Título del elemento"
+       data-content="Contenido del elemento">
+       
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
 ```
