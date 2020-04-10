@@ -22,7 +22,7 @@
 - [Crear objeto](#crear-objeto)
 - [JSON stringify](#JSON-stringify)
 - [Comprobar variable](#comprobar-variable)
-- [Mostrar pophover](#mostrar-popover)
+- [Mostrar popover](#mostrar-popover)
 
 ## forEach
 
@@ -277,7 +277,7 @@ Comprobar si la variable es emtpy, null o undefined
 if (!str || 0 === str.length) {...}
 ```
 
-## Mostrar pophover
+## Mostrar popover
 
 ```
 <label id="miElemento"        
