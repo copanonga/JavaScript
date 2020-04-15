@@ -136,12 +136,11 @@ $(document).ready(function() {
 ```
 Ver datos seleccionados al cambiar
 ```
-    var $eventSelect = $(".js-example-basic-multiple-tutelados");
+    var $eventSelect = $(".js-example-basic-multiple");
     $eventSelect.select2();
     $eventSelect.on("change", function (e) { 
         
         console.log("Val: " + $(".js-example-basic-multiple").select2("val"));
-        
         console.log("Data: " + JSON.stringify($eventSelect.select2('data')));
         
         var datosObtenidos = $eventSelect.select2('data');
