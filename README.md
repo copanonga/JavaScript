@@ -4,6 +4,7 @@
 ## Índice de contenidos
 
 - [forEach](#forEach)
+- [filter](#filter)
 - [indexOf](#indexOf)
 - [find](#find)
 - [sort](#sort)
@@ -43,6 +44,20 @@ data['lineas'].forEach(function (lineaObtenida, index) {
     console.log('Linea:  ' + lineaObtenida['linea'] + " Index: " + index);
 });
             
+```
+
+## filter
+
+```j
+const array = ['a', 'b', 'c', 'd'];
+
+const set = array.filter(function(item) {
+  console.log()'Item: ', item);
+  return item.length > 'b';
+  
+});
+
+console.log(set); // c, d
 ```
 
 ## indexOf
