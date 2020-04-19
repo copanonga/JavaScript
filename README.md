@@ -4,6 +4,7 @@
 ## Índice de contenidos
 
 - [forEach](#forEach)
+- [indexOf](#indexOf)
 - [find](#find)
 - [sort](#sort)
 - [Obtener valor y selección de inputs](#obtener-valor-y-selección-de-inputs)
@@ -42,6 +43,15 @@ data['lineas'].forEach(function (lineaObtenida, index) {
     console.log('Linea:  ' + lineaObtenida['linea'] + " Index: " + index);
 });
             
+```
+
+## indexOf
+
+```j
+const array = ['a', 'bbb', 'c', 'test'];
+
+console.log(array.indexOf('a)); // 0
+console.log(array.indexOf('d)); // -1
 ```
 
 ## find
