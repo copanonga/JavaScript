@@ -27,6 +27,7 @@
 - [Comprobar variable](#comprobar-variable)
 - [Mostrar popover](#mostrar-popover)
 - [Select](#select)
+- [Random](#random)
 
 ## forEach
 
@@ -350,6 +351,7 @@ if (!str || 0 === str.length) {...}
   });
 </script>
 ```
+
 ## Select
 
 ```
@@ -362,4 +364,12 @@ var option = document.createElement("option");
 option.value = 1;
 option.text = 'Dato 001';
 selectMostrar.add(option);
+```
+
+## Random
+
+```
+Math.random();    //Devuelve por ejemplo: 0.8160879771995637
+Math.floor(Math.random() * 11);      // Devuelve un número entre 0 y 10
+Math.floor(Math.random() * 10) + 1;  // Devuelve un número entre 1 y 10
 ```
