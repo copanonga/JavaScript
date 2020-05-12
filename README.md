@@ -26,6 +26,7 @@
 - [JSON stringify](#JSON-stringify)
 - [Comprobar variable](#comprobar-variable)
 - [Mostrar popover](#mostrar-popover)
+- [Select](#select)
 
 ## forEach
 
@@ -348,4 +349,17 @@ if (!str || 0 === str.length) {...}
     $('[data-toggle="popover"]').popover();
   });
 </script>
+```
+## Select
+
+```
+//Vaciar select
+$('#select').empty();
+
+//Añadir opciones al select
+var selectMostrar = document.getElementById("select");
+var option = document.createElement("option");
+option.value = 1;
+option.text = 'Dato 001';
+selectMostrar.add(option);
 ```
