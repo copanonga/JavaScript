@@ -132,13 +132,25 @@ if (isset($_POST['json'])) {
 Javascript
 
 ```
+var datosAEnviar = [];
+var datoAGuardar = { 
+  id: 1
+};
+datosAEnviar.push(datoAGuardar);
+
+var datoAGuardar = { 
+  id: 2
+};
+datosAEnviar.push(datoAGuardar);
+
 $.ajax(
       {
         url : "demopost.php",
         type: "POST",
         data : {
                 dato1: 'Primer dato',
-                dato2: 'Segundo dato'
+                dato2: 'Segundo dato',
+                datosAEnviar: datosAEnviar
                 },
         beforeSend : function (){
 
@@ -179,6 +191,14 @@ Fichero demopost.php
         $response = array();
         $response["dato1"] = $_POST['dato1'];
         $response["dato2"] = $_POST['dato2'];
+        
+        $datosAGuardarOriginal = $data['myRequest']['datosAEnviar'];        
+        $datosAGuardar = json_decode($datosAGuardarOriginal,true);
+        
+        foreach ($datosAGuardar as $dato) {
+          //$dato['id'];
+        }
+        
         $response["success"] = 1;
         
         echo json_encode($response);
