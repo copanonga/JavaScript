@@ -3,6 +3,7 @@
 
 ## Índice de contenidos
 
+- [Petición AJAX](#peticion-ajax)
 - [forEach](#forEach)
 - [filter](#filter)
 - [indexOf](#indexOf)
@@ -28,6 +29,72 @@
 - [Mostrar popover](#mostrar-popover)
 - [Select](#select)
 - [Random](#random)
+
+## Petición AJAX
+
+Javascript
+
+```
+$.ajax(
+      {
+        url : "demopost.php",
+        type: "POST",
+        data : {
+                dato1: 'Primer dato',
+                dato2: 'Segundo dato'
+                },
+        beforeSend : function (){
+
+        }
+      })
+        .done(function(data) {
+
+            console.log("Datos: " + data);
+            var mostrarData= JSON.parse(data);
+
+            if(mostrarData['success']==0) {
+                console.log("Error: success " + mostrarData['success']);
+            } else {
+
+                console.log("Success");
+                console.log("Mostrar dato1: " + mostrarData['dato1']);
+                console.log("Mostrar dato2: " + mostrarData['dato2']);
+                alert('Mostrar dato 1: ' + mostrarData['dato1'] + ' -|- Mostrar dato 2: ' + mostrarData['dato2']);
+
+            }
+
+        })
+        .fail(function(data) {
+            console.log("Error: peticionAJAX");
+        })
+        .always(function(data) {
+            console.log("Completada peticionAJAX");
+        });
+```
+
+Fichero demopost.php
+
+```
+<?php
+
+    if (isset($_POST['dato1']) && $_POST['dato2']) {
+
+        $response = array();
+        $response["dato1"] = $_POST['dato1'];
+        $response["dato2"] = $_POST['dato2'];
+        $response["success"] = 1;
+        
+        echo json_encode($response);
+        
+    } else {
+        
+        $response = array();
+        $response["success"] = 0;
+        
+        echo json_encode($response);
+        
+    }
+```
 
 ## forEach
 
