@@ -4,6 +4,7 @@
 ## Índice de contenidos
 
 - [Petición AJAX](#peticion-ajax)
+- [Petición AJAX JSON](#peticion-ajax-json)
 - [forEach](#forEach)
 - [filter](#filter)
 - [indexOf](#indexOf)
@@ -29,6 +30,102 @@
 - [Mostrar popover](#mostrar-popover)
 - [Select](#select)
 - [Random](#random)
+
+## Petición AJAX JSON
+
+Javascript
+
+```
+var dato1 = 'Primer dato';
+var dato2 = 'Segundo dato';
+var success = 1;
+
+var jsonAEnviar = {dato1, dato2, 'bloque':[], success};
+
+for (i = 0 ; i < 3; i ++) {
+
+var bloqueCreado = { id:i, 
+doble:i+i};
+jsonAEnviar.bloque.push(bloqueCreado);
+
+}
+
+console.log("JSON creado: " + jsonAEnviar);
+jsonString = JSON.stringify(jsonAEnviar);
+console.log("JSON creado string: " + jsonString);
+
+$.ajax(
+  {
+    type: 'POST',
+    url: 'demojson.php',
+    data: {json: JSON.stringify( jsonAEnviar )},
+    dataType: 'json'
+  })
+    .done(function(data) {
+
+        console.log("Datos: " + JSON.stringify(data));
+
+        if(data['success']==0) {
+            console.log("Error: success " + data['success']);
+        } else {
+
+            console.log("Success");
+            console.log("Mostrar dato1: " + data['dato1']);
+            console.log("Mostrar dato2: " + data['dato2']);
+            console.log("Mostrar bloque: " + data['bloque']);
+
+            for ( i = 0 ; i < data['bloque'].length ; i++) {
+
+                var bloqueObtenido = data['bloque'][i];
+
+                console.log("ID: " + bloqueObtenido['id']);
+                console.log("Doble: " + bloqueObtenido['doble']);
+
+            }
+
+            alert('Mostrar dato 1: ' + data['dato1'] + ' -|- Mostrar dato 2: ' + data['dato2']);
+
+        }
+
+    })
+    .fail(function(data) {
+        console.log("Error: peticionAJAXenviandoJSON");
+    })
+    .always(function(data) {
+        console.log("Completada peticionAJAXenviandoJSON");
+    });
+```
+
+Fichero demojson.php
+
+```
+<?php
+
+if (isset($_POST['json'])) {
+
+  $response = array();
+
+  $data['myRequest'] =$_REQUEST;
+  $total = json_decode($data['myRequest']['json'],true);
+
+  $response["dato1"] = $total['dato1'];
+  $response["dato2"] = $total['dato2'];
+
+  $response["bloque"] = $total['bloque'];
+
+  $response["success"] = 1;
+
+  echo json_encode($response);
+
+} else {
+
+  $response = array();
+  $response["success"] = 0;
+
+  echo json_encode($response);
+
+}
+```
 
 ## Petición AJAX
 
