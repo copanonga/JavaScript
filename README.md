@@ -150,7 +150,7 @@ $.ajax(
         data : {
                 dato1: 'Primer dato',
                 dato2: 'Segundo dato',
-                datosAEnviar: datosAEnviar
+                datosAEnviar: JSON.stringify(datosAEnviar)
                 },
         beforeSend : function (){
 
