@@ -30,6 +30,7 @@
 - [Mostrar popover](#mostrar-popover)
 - [Select](#select)
 - [Random](#random)
+- [Confirm](#confirm)
 
 ## Petición AJAX JSON
 
@@ -556,4 +557,15 @@ selectMostrar.add(option);
 Math.random();    //Devuelve por ejemplo: 0.8160879771995637
 Math.floor(Math.random() * 11);      // Devuelve un número entre 0 y 10
 Math.floor(Math.random() * 10) + 1;  // Devuelve un número entre 1 y 10
+```
+
+## Confirm
+
+```
+var resultado = confirm("¿Quieres borrar el dato?");
+if (resultado == true) {
+  console.log('Borrar');
+} else {
+  console.log('No borrar');
+}
 ```
