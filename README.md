@@ -31,6 +31,7 @@
 - [Select](#select)
 - [Random](#random)
 - [Confirm](#confirm)
+- [Toast](#toast)
 
 ## Petición AJAX JSON
 
@@ -568,4 +569,22 @@ if (resultado == true) {
 } else {
   console.log('No borrar');
 }
+```
+
+## Toast
+
+```
+<link rel="stylesheet" href="/rutaDelTheme/template/vendors/jquery-toast-plugin/jquery.toast.min.css">
+<script src="/rutaDelTheme/template/vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
+
+$.toast({
+    heading: 'Título',
+    text: 'Lorem ipsum...',
+    showHideTransition: 'slide',
+    icon: 'info',
+    loaderBg: '#46c35f',
+    position: 'top-right',
+    hideAfter: 6000
+});
+
 ```
