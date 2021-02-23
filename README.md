@@ -512,6 +512,11 @@ function Person (firstName, lastName) {
 }
 
 let person = new Person('Nombre','Apellido);
+
+let propiedad = 'firstName';
+
+console.log(person[propiedad]);
+
 ```
 
 ## JSON stringify
