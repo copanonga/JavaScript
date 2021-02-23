@@ -505,6 +505,13 @@ for(let i = 0; i < lines.length; i++) {
 var datos = new Object();
 datos.id = id;
 datos.valor = value;
+
+function Person (firstName, lastName) {
+  this.firstName = firstName,
+  this.lastName = lastName
+}
+
+let person = new Person('Nombre','Apellido);
 ```
 
 ## JSON stringify
