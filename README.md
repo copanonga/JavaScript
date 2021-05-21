@@ -32,6 +32,7 @@
 - [Random](#random)
 - [Confirm](#confirm)
 - [Toast](#toast)
+- [Cerrar modal](#cerrar-modal)
 
 ## Petición AJAX JSON
 
@@ -599,4 +600,12 @@ $.toast({
     hideAfter: 6000
 });
 
+```
+
+## Cerrar modal
+
+```
+  $("#modal").on('hidden.bs.modal', function () {
+        location.reload();
+  });
 ```
