@@ -33,6 +33,7 @@
 - [Confirm](#confirm)
 - [Toast](#toast)
 - [Cerrar modal](#cerrar-modal)
+- [Crear celdas](#crear-celdas)
 
 ## Petición AJAX JSON
 
@@ -608,4 +609,23 @@ $.toast({
   $("#modal").on('hidden.bs.modal', function () {
         location.reload();
   });
+```
+
+
+## Crear celdas
+
+```
+  ...
+  <tbody id="tablaAModificar">
+  ...
+  
+  var table = document.getElementById("tablaAModificar");
+
+  var row = table.insertRow();
+
+  var celda1 = row.insertCell();
+  celda1.innerHTML = 'Pomelo';
+
+  var celda2 = row.insertCell();
+  celda2.innerHTML = 'pomelo@producto.es'
 ```
